@@ -1,5 +1,51 @@
+
+# Ignore version control folders
 .git
-*.pyc
-*.pyo
-__pycache__
-.cache
+.gitignore
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.so
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Ignore large data files and logs
+*.log
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore notebooks and development files
+*.ipynb
+*.md
+*.rst
+
+# Ignore test files and folders
+tests/
+test/
+*.test.py
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Ignore node modules if present
+node_modules/
+
+# Ignore temporary files
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
