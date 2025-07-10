@@ -128,7 +128,7 @@ def indexed_data_management():
     st.subheader("Structured Parsed Data Lookup")
 
     # Dummy data for different log types
-    def generate_vpn_data(num_rows=100):
+    def generate_vpn_data(num_rows=5):
         data = {
             "Timestamp": [datetime.datetime.now() - datetime.timedelta(minutes=i) for i in range(num_rows)],
             "User": [f"user_{np.random.randint(1, 20)}" for _ in range(num_rows)],
@@ -139,7 +139,7 @@ def indexed_data_management():
         }
         return pd.DataFrame(data)
 
-    def generate_domain_controller_data(num_rows=100):
+    def generate_domain_controller_data(num_rows=5):
         data = {
             "Timestamp": [datetime.datetime.now() - datetime.timedelta(minutes=i) for i in range(num_rows)],
             "Event_ID": np.random.choice([4624, 4625, 4768, 4769], num_rows),
@@ -150,7 +150,7 @@ def indexed_data_management():
         }
         return pd.DataFrame(data)
 
-    def generate_zeek_data(num_rows=100):
+    def generate_zeek_data(num_rows=5):
         data = {
             "Timestamp": [datetime.datetime.now() - datetime.timedelta(minutes=i) for i in range(num_rows)],
             "UID": [f"C{np.random.randint(10000, 99999)}" for _ in range(num_rows)],
@@ -161,7 +161,7 @@ def indexed_data_management():
         }
         return pd.DataFrame(data)
 
-    def generate_haproxy_data(num_rows=100):
+    def generate_haproxy_data(num_rows=5):
         data = {
             "Timestamp": [datetime.datetime.now() - datetime.timedelta(minutes=i) for i in range(num_rows)],
             "Frontend": [f"frontend_{np.random.randint(1, 5)}" for _ in range(num_rows)],
@@ -173,7 +173,7 @@ def indexed_data_management():
         }
         return pd.DataFrame(data)
 
-    def generate_ad_dns_data(num_rows=100):
+    def generate_ad_dns_data(num_rows=5):
         data = {
             "Timestamp": [datetime.datetime.now() - datetime.timedelta(minutes=i) for i in range(num_rows)],
             "Query_Name": [f"host{np.random.randint(1, 50)}.example.com" for _ in range(num_rows)],
