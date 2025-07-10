@@ -1,5 +1,5 @@
 streamlit==1.33.0
-numpy==1.21.5
+numpy==1.26.0
 Cython>=0.29
 setuptools>=80.8.0
 wheel>=0.37.1
