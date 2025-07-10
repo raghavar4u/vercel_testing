@@ -1,4 +1,4 @@
-streamlit==1.33.0
+streamlit==1.40.2
 numpy==1.26.0
 Cython>=0.29
 setuptools>=80.8.0
